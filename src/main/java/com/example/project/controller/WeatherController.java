@@ -31,7 +31,11 @@ public class WeatherController {
     }
 
     @GetMapping("/sobre")
-    public String sobre() {
-        return "Este é um serviço de previsão do tempo utilizando a API OpenWeatherMap.";
+    public HashMap<String, String> sobre(){
+        
+    HashMap<String, String> sobre = new HashMap<>();
+        sobre.put("projeto", "Clima")
+        return sobre;
+
     }
 }
