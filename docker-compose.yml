@@ -1,9 +1,11 @@
-version: '3.8'
-
 services:
   weather-api:
     build: .
+    container_name: weather-api
     ports:
-      - "8080:8080"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
+    - 8080:8080
+    networks:
+      - spring-network
+networks:
+  spring-network:
+    drive: bridge
