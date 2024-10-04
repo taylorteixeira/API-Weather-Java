@@ -14,10 +14,8 @@ public class AboutController {
     @GetMapping
     public HashMap<String, String> getAboutInfo() {
         HashMap<String, String> aboutInfo = new HashMap<>();
-        aboutInfo.put("projeto", "Clima");
-        aboutInfo.put("descricao", "Este projeto fornece informações sobre o clima em várias cidades.");
-        aboutInfo.put("tecnologias", "Java, Spring Boot, API externa para dados de clima.");
-        aboutInfo.put("versao", "1.0.0");
+        aboutInfo.put("estudante", "Taylor Vargas Teixeira");
+        aboutInfo.put("projeto", "Weather API");
         return aboutInfo;
     }
 }
